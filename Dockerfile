@@ -1,7 +1,7 @@
 # Base image
 FROM node:20.8.1-alpine as builder
 
-# Set the working directory to the root of the monorepo
+# Set the working directory
 WORKDIR /app
 
 # Copy necessary files
