@@ -26,6 +26,7 @@ USER nextapp
 COPY --from=builder /app/.next/standalone ./
 COPY --from=builder /app/public ./.next/public
 COPY --from=builder /app/.next/static ./.next/static
+COPY --from=builder /app/next.config.mjs ./next.config.mjs
 
 EXPOSE 3000
 
